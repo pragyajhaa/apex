@@ -19,7 +19,15 @@ The APEX Binance Futures Trading Bot is live!
 👉 [Launch Web App](https://apex-tradingbot.streamlit.app/)
 
 > No installation required — just open in your browser and test trades on Binance Testnet.
-[![Apex UI](images/apex_image_4.png)](images/apex_image_4.png)
+[![Apex UI](images/apex_image_1.png)](images/apex_image_1.png)
+
+### 🔒 Binance Testnet Integration
+
+The APEX bot interacts securely with the **Binance Futures Testnet**, allowing safe and realistic trading without using real funds.
+
+[![Binance Testnet Integration](images/apex_image_4.png)](images/apex_image_4.png)
+
+*↑ Screenshot of Binance Futures Testnet dashboard showing test order execution.*
 
 
 ## ✨ Features
