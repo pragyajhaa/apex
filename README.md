@@ -13,6 +13,13 @@
 
 A professional Python trading bot for Binance USDT-M Futures Testnet, featuring both CLI and Web interfaces with robust error handling. Perfect for testing trading strategies risk-free.
 
+## 🔗 Live Demo
+
+The APEX Binance Futures Trading Bot is live!  
+👉 [Launch Web App](https://apex-tradingbot.streamlit.app/)
+
+> No installation required — just open in your browser and test trades on Binance Testnet.
+
 ## ✨ Features
 
 ### 📊 Trading Features
