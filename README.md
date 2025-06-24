@@ -2,13 +2,13 @@
 
 <div align="center">
   <p>
-    <a href="https://github.com/pragyajhaa/apex-trading-bot/actions">
-      <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/pragyajhaa/apex-trading-bot/python-package.yml?style=for-the-badge">
+    <a href="https://github.com/pragyajhaa/apex/actions">
+      <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/pragyajhaa/apex/python-package.yml?style=for-the-badge">
     </a>
-    <a href="https://github.com/pragyajhaa/apex-trading-bot">
-      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/pragyajhaa/apex-trading-bot?style=for-the-badge">
+    <a href="https://github.com/pragyajhaa/apex">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/pragyajhaa/apex?style=for-the-badge">
     </a>
-    <a href="https://github.com/pragyajhaa/apex-trading-bot/blob/main/LICENSE">
+    <a href="https://github.com/pragyajhaa/apex/blob/main/LICENSE">
       <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" />
     </a>
   </p>
@@ -168,7 +168,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## ⚠️ Important Notes
+## Important Notes
 
 - The bot only works with Binance Futures Testnet
 - All trades are executed in test mode (no real funds)
@@ -176,7 +176,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Monitor the `bot.log` file for detailed execution logs
 - Use at your own risk - always test thoroughly with small amounts first
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Binance API](https://binance-docs.github.io/apidocs/futures/en/) for their excellent documentation
 - [python-binance](https://github.com/sammchardy/python-binance) for the Binance API client
