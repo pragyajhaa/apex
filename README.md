@@ -2,9 +2,6 @@
 
 <div align="center">
   <p>
-    <a href="https://github.com/pragyajhaa/apex/actions">
-      <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/pragyajhaa/apex/python-package.yml?style=for-the-badge">
-    </a>
     <a href="https://github.com/pragyajhaa/apex">
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/pragyajhaa/apex?style=for-the-badge">
     </a>
