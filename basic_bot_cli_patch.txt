@@ -1,0 +1,44 @@
+# Add CLI entrypoint to basic_bot.py
+# Paste this at the very end of the file (after all class/function definitions)
+
+if __name__ == "__main__":
+    import sys
+    import argparse
+    parser = argparse.ArgumentParser(description="Place a Binance Futures Testnet order via BasicBot")
+    parser.add_argument("--symbol", required=True, help="Trading pair symbol, e.g., BTCUSDT")
+    parser.add_argument("--side", required=True, help="Order side: BUY or SELL")
+    parser.add_argument("--type", required=True, choices=["MARKET", "LIMIT"], help="Order type: MARKET or LIMIT")
+    parser.add_argument("--quantity", required=True, type=float, help="Order quantity (must be positive)")
+    parser.add_argument("--price", type=float, help="Order price (required for LIMIT orders)")
+    args = parser.parse_args()
+
+    # Validate side
+    side = args.side.upper()
+    if side not in ("BUY", "SELL"):
+        print("Error: --side must be BUY or SELL", file=sys.stderr)
+        sys.exit(1)
+
+    # Validate quantity
+    if args.quantity <= 0:
+        print("Error: --quantity must be positive", file=sys.stderr)
+        sys.exit(1)
+
+    # Validate price for LIMIT order
+    if args.type == "LIMIT":
+        if args.price is None:
+            print("Error: --price is required for LIMIT orders", file=sys.stderr)
+            sys.exit(1)
+        if args.price <= 0:
+            print("Error: --price must be positive", file=sys.stderr)
+            sys.exit(1)
+
+    bot = BasicBot()
+
+    try:
+        if args.type == "MARKET":
+            bot.market_order(symbol=args.symbol, side=side, quantity=args.quantity)
+        else:
+            bot.limit_order(symbol=args.symbol, side=side, quantity=args.quantity, price=args.price)
+    except Exception as e:
+        print(f"Order failed: {e}", file=sys.stderr)
+        sys.exit(1)
